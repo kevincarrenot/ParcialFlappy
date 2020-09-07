@@ -25,31 +25,18 @@ public class ObstaculosPull : MonoBehaviour
         {
             tubos[i] = Instantiate(obstaculo, objectPoolPosition, Quaternion.identity);
         }
-        tiempoDeObjetos += Time.deltaTime;
-        if (GameController.instance.gameOver && tiempoDeObjetos >= spawnRate)
-        {
-            tiempoDeObjetos = 0;
-            float posicionY = Random.Range(tuboMin, tuboMax);
-            tubos[currentTubo].transform.position = new Vector2(posicionX, posicionY);
-            currentTubo++;
-            if (currentTubo >= obstaculosPoolSize)
-            {
-                currentTubo = 0;
-            }
-            // Y 3 Y -1
-            // X
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         tiempoDeObjetos += Time.deltaTime;
-        if (GameController.instance.gameOver && tiempoDeObjetos >= spawnRate)
+        if (!GameController.instance.gameOver && tiempoDeObjetos >= spawnRate)
         {
             tiempoDeObjetos = 0;
             float posY = Random.Range(tuboMin, tuboMax);
-            tubos[currentTubo].transform.position = new Vector3(5, posY);
+            tubos[currentTubo].transform.position = new Vector3(posicionX, posY);
             currentTubo++;
             if (currentTubo >= obstaculosPoolSize)
             {

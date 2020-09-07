@@ -398,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482548840}
   - component: {fileID: 482548839}
+  - component: {fileID: 482548841}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -435,6 +436,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &482548841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482548838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7bb8b23505529a48b8e4805af5a0eb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstaculosPoolSize: 5
+  tuboMin: -1
+  tuboMax: 3
+  posicionX: 4
+  obstaculo: {fileID: 3047188608751335908, guid: 44c8f4680ae28c94eb0e9d6750896809,
+    type: 3}
+  spawnRate: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,72 +1278,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &4755598453485356365
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275381, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4755598453212275385, guid: 44c8f4680ae28c94eb0e9d6750896809,
-        type: 3}
-      propertyPath: m_Name
-      value: Obstaculos
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 44c8f4680ae28c94eb0e9d6750896809, type: 3}
